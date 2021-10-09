@@ -9,7 +9,8 @@ export const Button = ({ color, text, onClick}) => {
             className="btn"
             style={{ backgroundColor: color }}>
             {text}
-        </button>)
+        </button>
+        )
 }
 
 Button.defaultProps = {

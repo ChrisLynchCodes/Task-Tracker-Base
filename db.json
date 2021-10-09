@@ -1,3 +1,28 @@
 {
-  "tasks": []
+  "tasks": [
+    {
+      "text": "Gym",
+      "day": "21st Feb 3:20pm",
+      "reminder": true,
+      "id": 1
+    },
+    {
+      "text": "Uni",
+      "day": "1st March 4:15pm",
+      "reminder": false,
+      "id": 2
+    },
+    {
+      "text": "hello",
+      "day": "12pm",
+      "reminder": true,
+      "id": 3
+    },
+    {
+      "text": "jk",
+      "day": "",
+      "reminder": true,
+      "id": 4
+    }
+  ]
 }

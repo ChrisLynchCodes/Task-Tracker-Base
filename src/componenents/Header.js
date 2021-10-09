@@ -1,7 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Button } from './Button'
 import { useLocation } from 'react-router-dom'
+import Button from '@mui/material/Button';
+
 
 //export arrow function with props grabbed
 export const Header = ({ title, onAdd, showAdd }) => {
@@ -11,12 +12,16 @@ export const Header = ({ title, onAdd, showAdd }) => {
         <header className='header'>
             <h1 style={headerStyle}>{title}</h1>
 
-           {/* if we are in the root show the button */}
+            {/* if we are in the root show the button */}
             {location.pathname === '/' && (
                 // ternary -if true value, else value
-                <Button color={showAdd ? 'red' : 'green'}
-                        text={showAdd ? 'Close' : 'Add'}
-                        onClick={onAdd} />)}
+                <Button
+                    size={'small'}
+                    color={showAdd ? 'error' : 'success'}
+                    onClick={onAdd} variant="contained">{showAdd ? 'Close' : 'Add'}
+                    
+                </Button>)}
+
 
 
 

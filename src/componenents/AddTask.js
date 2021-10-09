@@ -1,5 +1,6 @@
 import { useState } from 'react'
-
+import Button from '@mui/material/Button';
+import SendIcon from '@mui/icons-material/Send';
 
 
 
@@ -34,8 +35,8 @@ export const AddTask = ({ onAdd }) => {
             </div>
             <div className='form-control'>
                 <label>Date</label>
-         
-               
+
+
 
 
 
@@ -49,7 +50,10 @@ export const AddTask = ({ onAdd }) => {
                     value={reminder} onChange={(e) => setReminder(e.currentTarget.checked)} />
             </div>
 
-            <input className='btn btn-block' type='submit' value='Save Task' />
+            {/* <input className='btn btn-block' type='submit' value='Save Task' /> */}
+            <Button variant="contained" color='success'type='submit' endIcon={<SendIcon />}>
+        Save
+      </Button>
 
         </form>
     )
